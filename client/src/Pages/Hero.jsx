@@ -4,7 +4,7 @@ import { Cover } from '../Components/ui/cover';
 const Hero = () => {
   return (
     
-    <section className="relative flex justify-center items-center h-screen  text-white ">
+    <section className="relative flex justify-center items-center h-screen  text-white bg-rd-500 z-[99] top-0 align-middle">
       {/* Background Animation */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
