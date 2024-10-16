@@ -1,6 +1,6 @@
 import Navbar from "./Components/Navbar";
 import { BackgroundLines } from "./Components/ui/background-lines";
-// import { SparklesCore } from "./Components/ui/sparkles";
+import { SparklesCore } from "./Components/ui/sparkles";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Hero from "./Pages/Hero";import About from "./Pages/About";
 import Event from "./Pages/Event";
@@ -16,7 +16,7 @@ export default function App() {
       <div className="h-screen relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
         <Navbar />
         <div className="w-full absolute inset-0 ">
-          {/* <SparklesCore
+          <SparklesCore
             id="tsparticlesfullpage"
             background="transparent"
             minSize={3}
@@ -24,7 +24,7 @@ export default function App() {
             particleDensity={100}
             className="w-full h-full"
             particleColor="#AAAFFF"
-          /> */}
+          />
         </div>
           <Routes>
             <Route path="/" element={<Hero />} />
